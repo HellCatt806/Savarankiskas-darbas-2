@@ -24,7 +24,8 @@ namespace savarankiskasdarbas2 {
 		void SaveTextToFile(System::String^ filePath);
 		void openFile(System::String^ filePath);
 		void generateMokiniai(int mokSk);				//Sukuria pasirinkta mokiniu skaiciu ir sugeneruoja ju pazymius
-		void skaiciuotiPazymius();
+
+		void processGrades();
 	protected:
 		/// <summary>
 		/// Clean up any resources being used.
@@ -203,7 +204,7 @@ private: System::Void buttonAbout_Click(System::Object^ sender, System::EventArg
 }
 private: System::Void buttonCalculate_Click(System::Object^ sender, System::EventArgs^ e) {
 	//Skaiciuoti pažymius mygtukas
-	skaiciuotiPazymius();
+	processGrades();
 }
 };
 }
